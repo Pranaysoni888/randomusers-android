@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Random Users</string>
+
+    <string name="default_loading_message">Loading…</string>
+    <string name="default_internet_message">No internet available</string>
+
+    <string name="msg_error_api_call">Something went wrong!!!</string>
+    <string name="msg_list_updating">Fetching new users</string>
+    <string name="msg_list_updated">List updated with new users</string>
+</resources>

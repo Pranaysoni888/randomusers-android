@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="matchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="commonCardView" parent="matchWrap">
+        <item name="cardCornerRadius">@dimen/dimen_8dp</item>
+        <item name="cardElevation">@dimen/card_elevation_5</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+</resources>

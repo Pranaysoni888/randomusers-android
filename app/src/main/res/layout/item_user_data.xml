@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/commonCardView"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/dimen_12dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_10dp"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUserImage"
+                app:layout_constraintCircleRadius="4dp"
+                android:src="@drawable/ic_placeholder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_height="@dimen/dimen_60dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                app:layout_constraintStart_toEndOf="@id/ivUserImage"
+                app:layout_constraintTop_toTopOf="@id/ivUserImage"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/tvUserName"
+                tools:text="Pranay Soni - Male"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUserEmail"
+                tools:text="pranaysoni888"
+                app:layout_constraintStart_toStartOf="@id/tvUserName"
+                app:layout_constraintTop_toBottomOf="@id/tvUserName"
+                app:layout_constraintBottom_toTopOf="@id/tvUserDOB"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUserDOB"
+                tools:text="29/11/94"
+                app:layout_constraintStart_toStartOf="@id/tvUserName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</layout>
